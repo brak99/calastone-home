@@ -13,6 +13,8 @@ namespace Calastone
             services.AddTransient<IFilter, ShortFilter>();
             services.AddTransient<IFilter, TFilter>();
 
+            var serviceProvider = services.BuildServiceProvider();
+
             var vowel = new VowelFilter();
             var shortFilter = new ShortFilter();
             var tFilter = new TFilter();
