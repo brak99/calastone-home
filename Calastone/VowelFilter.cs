@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Calastone
+﻿namespace Calastone
 {
     public class VowelFilter : IFilter
     {
@@ -21,7 +17,6 @@ namespace Calastone
 
             if (input.Length % 2 == 1)
             {
-                // Keep word if middle character is NOT a vowel
                 if (!vowels.Contains(input[middleIndex]))
                 {
                     filtered = input;

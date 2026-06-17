@@ -38,11 +38,11 @@ namespace CalastoneTests
         public void Filter_ShouldReturnString_WhenInputIsRather()
         {
             // Arrange
-            string input = "two";
+            string input = "Two";
             // Act
             var result = _filter.Filter(input);
             // Assert
-            Assert.Equal("two", result);
+            Assert.Equal("Two", result);
         }
     }
 }

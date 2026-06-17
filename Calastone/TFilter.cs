@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Calastone
+﻿namespace Calastone
 {
     public class TFilter : IFilter
     {
@@ -15,7 +11,9 @@ namespace Calastone
                 return input;
             }
 
-            return input.ToLower().Contains("t") ? "" : input;
+            var lower = input.ToLower();
+
+            return lower.Contains("t") ? "" : input;
 
         }
     }
