@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Calastone-tests/Calastone-tests.csproj" />
+  <Project Path="Calastone/Calastone.csproj" />
+</Solution>
